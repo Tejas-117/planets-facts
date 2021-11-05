@@ -18,7 +18,7 @@
 ### Links
 
 - [Github URL](https://github.com/Tejas-117)
-- [Live Site URL](https://tejas-117.github.io/planet-facts/)
+- [Live Site URL](https://tejas-117.github.io/planets-facts/)
 
 ## My process
 
