@@ -1,0 +1,190 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__logo {
+  font-family: Antonio;
+  font-size: 1.4rem;
+  margin: 20px;
+}
+
+.hamburger__icon {
+  display: none;
+}
+
+.nav__list ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list ul li {
+  /* width: 80px; */
+  margin: 0 10px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 30px 0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+  opacity: 0.7;
+}
+
+.nav__ul li:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 3px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav__ul li:hover:before {
+  width: 100%;
+  left: 0%;
+}
+
+.nav__ul .active__header {
+  opacity: 1;
+}
+.nav__ul .active__header:before {
+  width: 100%;
+  left: 0%;
+}
+
+/* for colors */
+.mercury:before {
+  background: var(--mercury);
+}
+.venus:before {
+  background-color: var(--venus);
+}
+.earth:before {
+  background-color: var(--earth);
+}
+.mars:before {
+  background-color: var(--mars);
+}
+.jupiter:before {
+  background-color: var(--jupiter);
+}
+.saturn:before {
+  background-color: var(--saturn);
+}
+.uranus:before {
+  background-color: var(--uranus);
+}
+.neptune:before {
+  background-color: var(--neptune);
+}
+
+/* for mobiles */
+@media only screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    border-bottom: none;
+  } 
+  .header__logo {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0 0;
+    padding: 0 1rem 1rem;
+  }
+
+  .hamburger__icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  
+  .nav__list {
+    display: block;
+    background-color: #070724;
+    width: 100%;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.7s ease-in;
+    position: relative;
+    z-index: 10;
+  }
+  .nav__list ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  .show {
+    max-height: 90vh;
+  }
+  
+  .nav__list ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 2rem;
+    position: relative;
+    opacity: 0.6;
+    font-size: 0.7rem;
+  }
+  .nav__ul li:not(.active__header):hover {
+    opacity: 0.8;
+  }
+  .nav__ul li:before {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    left: 0%;
+    top: 40%;
+  }
+  .nav__ul li:hover:before {
+    width: 15px;
+    transform: rotateY(360deg);
+    transition: transform ease 1s;
+  }
+  .nav__ul .active__header:before {
+    width: 15px;
+  }
+
+  .nav__ul li:after {
+    content: url("../../images/icon-chevron.svg");
+    position: absolute;
+    right: 5%;
+    top: 40%;
+  }
+  .nav__ul li:not(.active__header):hover:after{
+    transform: rotateZ(90deg);
+    transition: transform linear 0.5s;
+  }
+  .nav__ul .active__header:after{
+    transform: rotateZ(180deg);
+    transition: transform ease-out 0.8s;
+  }  
+}
+
+/* for tablets */
+@media (max-width: 850px) {
+   .header{
+      flex-direction: column;
+   }
+   .header__logo{
+      display: block;
+      width: auto;
+   }
+
+   .nav__list ul{
+     flex-wrap: wrap;
+   }
+  
+   .nav__list ul li{
+      font-size: 0.55rem;
+   }
+}

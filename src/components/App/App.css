@@ -1,0 +1,60 @@
+:root{
+   --mercury: #419ebb;
+   --venus: #eda249;
+   --earth: #6d2ed5;
+   --mars: #d14c32;
+   --jupiter: #d83a34;
+   --saturn: #cd5120;
+   --uranus: #1ec1a2;
+   --neptune: #2d68f0;
+   --tabBG: white;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #070724;
+   background-repeat: no-repeat;
+   background-size: auto;
+   font-family: Spartan;
+   color: white;
+   font-size: 15px;
+   position: relative;
+}
+
+a{
+   color: inherit;
+}
+
+ul{
+   list-style: none;
+}
+
+.mercury{
+   background: var(--mercury);
+}
+.venus{
+   background-color: var(--venus);
+}
+.earth{
+   background-color: var(--earth);
+}
+.mars{
+   background-color: var(--mars);
+}
+.jupiter{
+   background-color: var(--jupiter);
+}
+.saturn{
+   background-color: var(--saturn);
+}
+.uranus{
+   background-color: var(--uranus);
+}
+.neptune{
+   background-color: var(--neptune);
+}
