@@ -18,7 +18,7 @@
 ### Links
 
 - [Github URL](https://github.com/Tejas-117)
-- [Live Site URL](https://tejas-117.github.io/Rest-Countries/)
+- [Live Site URL](https://tejas-117.github.io/planet-facts/)
 
 ## My process
 
@@ -28,4 +28,4 @@
 - ReactJS
 - CSS custom properties
 - CSS Grid, Flexbox
-- Mobile-first workflo
+- Mobile-first workflow
