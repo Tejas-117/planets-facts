@@ -155,7 +155,7 @@
   }
 
   .nav__ul li:after {
-    content: url("../../images/icon-chevron.svg");
+    content: url("../../assets/icon-chevron.svg");
     position: absolute;
     right: 5%;
     top: 40%;
@@ -171,13 +171,14 @@
 }
 
 /* for tablets */
-@media (max-width: 850px) {
+@media (min-width: 652px) and (max-width: 850px) {
    .header{
       flex-direction: column;
    }
    .header__logo{
       display: block;
       width: auto;
+      margin: 1rem auto;
    }
 
    .nav__list ul{

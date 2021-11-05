@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { PlanetContext } from '../../utils/ContextProvider';
 import {  toggleNav } from './mobileNavbar';
-import hamburger from "../../images/icon-hamburger.svg";
+import hamburger from "../../assets/icon-hamburger.svg";
 import './Header.css'
 
 function Header() {

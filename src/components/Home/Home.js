@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { PlanetContext } from "../../utils/ContextProvider";
 import getData from "../../utils/getData";
 import "./Home.css";
-import source from '../../images/icon-source.svg';
-import background from '../../images/background-stars.svg';
+import source from '../../assets/icon-source.svg';
+import background from '../../assets/background-stars.svg';
+// import someImg from '/images/geology-earth.png';
 
 function Home() {
   const [planet, setPlanet] = useContext(PlanetContext);
@@ -48,8 +49,8 @@ function Home() {
 
   
   const imgUrl = (tab !== 'structure') ? planetData.images['overview'] : planetData.images[tab]; 
+  console.log(imgUrl)
 
-  
   return (
     <div className="planet" style={{backgroundImage: `url(${background})` }}>
       <div className="image__container">
